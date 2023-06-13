@@ -14,6 +14,12 @@
 		D30B78F82A387300003FE5C1 /* TrackerISSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B78F72A387300003FE5C1 /* TrackerISSTests.swift */; };
 		D30B79022A387300003FE5C1 /* TrackerISSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B79012A387300003FE5C1 /* TrackerISSUITests.swift */; };
 		D30B79042A387300003FE5C1 /* TrackerISSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B79032A387300003FE5C1 /* TrackerISSUITestsLaunchTests.swift */; };
+		D30B79142A38DDFB003FE5C1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B79132A38DDFB003FE5C1 /* LoginView.swift */; };
+		D30B79152A38DDFB003FE5C1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B79132A38DDFB003FE5C1 /* LoginView.swift */; };
+		D30B79162A38DDFB003FE5C1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B79132A38DDFB003FE5C1 /* LoginView.swift */; };
+		D30B79182A38DE21003FE5C1 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B79172A38DE21003FE5C1 /* LoginViewModel.swift */; };
+		D30B79192A38DE21003FE5C1 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B79172A38DE21003FE5C1 /* LoginViewModel.swift */; };
+		D30B791A2A38DE21003FE5C1 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B79172A38DE21003FE5C1 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,8 @@
 		D30B78FD2A387300003FE5C1 /* TrackerISSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrackerISSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D30B79012A387300003FE5C1 /* TrackerISSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerISSUITests.swift; sourceTree = "<group>"; };
 		D30B79032A387300003FE5C1 /* TrackerISSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerISSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D30B79132A38DDFB003FE5C1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		D30B79172A38DE21003FE5C1 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +102,9 @@
 		D30B78E52A3872FF003FE5C1 /* TrackerISS */ = {
 			isa = PBXGroup;
 			children = (
+				D30B79122A38DDDF003FE5C1 /* Astronauts */,
+				D30B79112A38DDDA003FE5C1 /* Map */,
+				D30B79102A38DDCE003FE5C1 /* Login */,
 				D30B78E62A3872FF003FE5C1 /* TrackerISSApp.swift */,
 				D30B78E82A3872FF003FE5C1 /* ContentView.swift */,
 				D30B78EA2A387300003FE5C1 /* Assets.xcassets */,
@@ -125,6 +136,29 @@
 				D30B79032A387300003FE5C1 /* TrackerISSUITestsLaunchTests.swift */,
 			);
 			path = TrackerISSUITests;
+			sourceTree = "<group>";
+		};
+		D30B79102A38DDCE003FE5C1 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D30B79132A38DDFB003FE5C1 /* LoginView.swift */,
+				D30B79172A38DE21003FE5C1 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		D30B79112A38DDDA003FE5C1 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		D30B79122A38DDDF003FE5C1 /* Astronauts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Astronauts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +291,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D30B79182A38DE21003FE5C1 /* LoginViewModel.swift in Sources */,
+				D30B79142A38DDFB003FE5C1 /* LoginView.swift in Sources */,
 				D30B78E92A3872FF003FE5C1 /* ContentView.swift in Sources */,
 				D30B78E72A3872FF003FE5C1 /* TrackerISSApp.swift in Sources */,
 			);
@@ -266,7 +302,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D30B79152A38DDFB003FE5C1 /* LoginView.swift in Sources */,
 				D30B78F82A387300003FE5C1 /* TrackerISSTests.swift in Sources */,
+				D30B79192A38DE21003FE5C1 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +312,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D30B791A2A38DE21003FE5C1 /* LoginViewModel.swift in Sources */,
+				D30B79162A38DDFB003FE5C1 /* LoginView.swift in Sources */,
 				D30B79022A387300003FE5C1 /* TrackerISSUITests.swift in Sources */,
 				D30B79042A387300003FE5C1 /* TrackerISSUITestsLaunchTests.swift in Sources */,
 			);
