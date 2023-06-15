@@ -8,7 +8,7 @@
 import Foundation
 import MapKit
 
-struct ISSAnnotation: Identifiable {
+struct ISSAnnotation: Identifiable, Equatable {
     // ISSAnnotation cumple con el protocolo Identifiable, que es necesario para usar con Map. Nuevas actualizaciones
     let id = UUID()
     var coordinate: CLLocationCoordinate2D
