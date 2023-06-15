@@ -8,11 +8,14 @@
 import Foundation
 import Combine
 
+
 class LoginViewModel: ObservableObject {
     var didTapStartButton = PassthroughSubject<Void, Never>()
     private var cancellables = Set<AnyCancellable>()
+    private let appState: AppState
 
-    init() {
+    init(appState: AppState) {
+        self.appState = appState
         setupBindings()
     }
 
@@ -21,10 +24,11 @@ class LoginViewModel: ObservableObject {
             .sink { [weak self] in
                 self?.navigateToMap()
             }
-            .store(in: &cancellables) //'.store(in: &cancellables) se asegura de que la suscripción se mantenga en memoria hasta que ya no sea necesaria.
+            .store(in: &cancellables)//'.store(in: &cancellables) se asegura de que la suscripción se mantenga en memoria hasta que ya no sea necesaria.
     }
 
     private func navigateToMap() {
-        //navegacion
+        appState.page = .map
     }
 }
+
