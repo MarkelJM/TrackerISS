@@ -9,10 +9,16 @@ import SwiftUI
 
 @main
 struct TrackerISSApp: App {
+    @StateObject var appState = AppState()
+
     var body: some Scene {
         WindowGroup {
-            LoginView(viewModel: LoginViewModel())
-            
+            switch appState.page {
+            case .login:
+                LoginView(viewModel: LoginViewModel(appState: appState))
+            case .map:
+                MapView(viewModel: MapViewModel())
+            }
         }
     }
 }
