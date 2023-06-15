@@ -35,6 +35,12 @@
 		D30B79322A3B1FFD003FE5C1 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B79312A3B1FFD003FE5C1 /* AppState.swift */; };
 		D30B79332A3B1FFD003FE5C1 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B79312A3B1FFD003FE5C1 /* AppState.swift */; };
 		D30B79342A3B1FFD003FE5C1 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B79312A3B1FFD003FE5C1 /* AppState.swift */; };
+		D30B79382A3B6F00003FE5C1 /* AnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B79372A3B6F00003FE5C1 /* AnnotationView.swift */; };
+		D30B79392A3B6F00003FE5C1 /* AnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B79372A3B6F00003FE5C1 /* AnnotationView.swift */; };
+		D30B793A2A3B6F00003FE5C1 /* AnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B79372A3B6F00003FE5C1 /* AnnotationView.swift */; };
+		D30B793C2A3B7369003FE5C1 /* ISSAnnotationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B793B2A3B7369003FE5C1 /* ISSAnnotationModel.swift */; };
+		D30B793D2A3B7369003FE5C1 /* ISSAnnotationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B793B2A3B7369003FE5C1 /* ISSAnnotationModel.swift */; };
+		D30B793E2A3B7369003FE5C1 /* ISSAnnotationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B793B2A3B7369003FE5C1 /* ISSAnnotationModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +79,8 @@
 		D30B79282A3B1269003FE5C1 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		D30B79312A3B1FFD003FE5C1 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		D30B79352A3B6DD3003FE5C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D30B79372A3B6F00003FE5C1 /* AnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationView.swift; sourceTree = "<group>"; };
+		D30B793B2A3B7369003FE5C1 /* ISSAnnotationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSAnnotationModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +182,7 @@
 		D30B79112A38DDDA003FE5C1 /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				D30B79362A3B6EE6003FE5C1 /* Annotation */,
 				D30B791B2A3A2768003FE5C1 /* LocationISSModel.swift */,
 				D30B79242A3A2809003FE5C1 /* MapViewModel.swift */,
 				D30B79282A3B1269003FE5C1 /* MapView.swift */,
@@ -202,6 +211,15 @@
 				D30B79312A3B1FFD003FE5C1 /* AppState.swift */,
 			);
 			path = NavigationState;
+			sourceTree = "<group>";
+		};
+		D30B79362A3B6EE6003FE5C1 /* Annotation */ = {
+			isa = PBXGroup;
+			children = (
+				D30B79372A3B6F00003FE5C1 /* AnnotationView.swift */,
+				D30B793B2A3B7369003FE5C1 /* ISSAnnotationModel.swift */,
+			);
+			path = Annotation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,6 +359,8 @@
 				D30B79182A38DE21003FE5C1 /* LoginViewModel.swift in Sources */,
 				D30B79142A38DDFB003FE5C1 /* LoginView.swift in Sources */,
 				D30B79252A3A2809003FE5C1 /* MapViewModel.swift in Sources */,
+				D30B79382A3B6F00003FE5C1 /* AnnotationView.swift in Sources */,
+				D30B793C2A3B7369003FE5C1 /* ISSAnnotationModel.swift in Sources */,
 				D30B78E92A3872FF003FE5C1 /* ContentView.swift in Sources */,
 				D30B78E72A3872FF003FE5C1 /* TrackerISSApp.swift in Sources */,
 			);
@@ -351,8 +371,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D30B792A2A3B1269003FE5C1 /* MapView.swift in Sources */,
+				D30B79392A3B6F00003FE5C1 /* AnnotationView.swift in Sources */,
 				D30B79152A38DDFB003FE5C1 /* LoginView.swift in Sources */,
 				D30B79222A3A27BA003FE5C1 /* apiService.swift in Sources */,
+				D30B793D2A3B7369003FE5C1 /* ISSAnnotationModel.swift in Sources */,
 				D30B79332A3B1FFD003FE5C1 /* AppState.swift in Sources */,
 				D30B78F82A387300003FE5C1 /* TrackerISSTests.swift in Sources */,
 				D30B791D2A3A2768003FE5C1 /* LocationISSModel.swift in Sources */,
@@ -372,6 +394,8 @@
 				D30B791A2A38DE21003FE5C1 /* LoginViewModel.swift in Sources */,
 				D30B79162A38DDFB003FE5C1 /* LoginView.swift in Sources */,
 				D30B79272A3A2809003FE5C1 /* MapViewModel.swift in Sources */,
+				D30B793A2A3B6F00003FE5C1 /* AnnotationView.swift in Sources */,
+				D30B793E2A3B7369003FE5C1 /* ISSAnnotationModel.swift in Sources */,
 				D30B79022A387300003FE5C1 /* TrackerISSUITests.swift in Sources */,
 				D30B79042A387300003FE5C1 /* TrackerISSUITestsLaunchTests.swift in Sources */,
 			);
