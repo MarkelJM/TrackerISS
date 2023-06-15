@@ -29,6 +29,9 @@
 		D30B79252A3A2809003FE5C1 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B79242A3A2809003FE5C1 /* MapViewModel.swift */; };
 		D30B79262A3A2809003FE5C1 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B79242A3A2809003FE5C1 /* MapViewModel.swift */; };
 		D30B79272A3A2809003FE5C1 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B79242A3A2809003FE5C1 /* MapViewModel.swift */; };
+		D30B79292A3B1269003FE5C1 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B79282A3B1269003FE5C1 /* MapView.swift */; };
+		D30B792A2A3B1269003FE5C1 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B79282A3B1269003FE5C1 /* MapView.swift */; };
+		D30B792B2A3B1269003FE5C1 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B79282A3B1269003FE5C1 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +67,7 @@
 		D30B791B2A3A2768003FE5C1 /* LocationISSModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationISSModel.swift; sourceTree = "<group>"; };
 		D30B79202A3A27BA003FE5C1 /* apiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiService.swift; sourceTree = "<group>"; };
 		D30B79242A3A2809003FE5C1 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		D30B79282A3B1269003FE5C1 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +169,7 @@
 			children = (
 				D30B791B2A3A2768003FE5C1 /* LocationISSModel.swift */,
 				D30B79242A3A2809003FE5C1 /* MapViewModel.swift */,
+				D30B79282A3B1269003FE5C1 /* MapView.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -315,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D30B79212A3A27BA003FE5C1 /* apiService.swift in Sources */,
+				D30B79292A3B1269003FE5C1 /* MapView.swift in Sources */,
 				D30B791C2A3A2768003FE5C1 /* LocationISSModel.swift in Sources */,
 				D30B79182A38DE21003FE5C1 /* LoginViewModel.swift in Sources */,
 				D30B79142A38DDFB003FE5C1 /* LoginView.swift in Sources */,
@@ -328,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D30B792A2A3B1269003FE5C1 /* MapView.swift in Sources */,
 				D30B79152A38DDFB003FE5C1 /* LoginView.swift in Sources */,
 				D30B79222A3A27BA003FE5C1 /* apiService.swift in Sources */,
 				D30B78F82A387300003FE5C1 /* TrackerISSTests.swift in Sources */,
@@ -342,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D30B79232A3A27BA003FE5C1 /* apiService.swift in Sources */,
+				D30B792B2A3B1269003FE5C1 /* MapView.swift in Sources */,
 				D30B791E2A3A2768003FE5C1 /* LocationISSModel.swift in Sources */,
 				D30B791A2A38DE21003FE5C1 /* LoginViewModel.swift in Sources */,
 				D30B79162A38DDFB003FE5C1 /* LoginView.swift in Sources */,

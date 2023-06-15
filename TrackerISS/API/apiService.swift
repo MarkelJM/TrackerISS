@@ -10,11 +10,13 @@ import Combine
 
 class APIService {
     func fetchISSLocation() -> AnyPublisher<ISSLocationResponse, Error> {
-        let url = URL(string: "http://api.open-notify.org/iss-now.json")!
+        let urlString = URL(string: "http://api.open-notify.org/iss-now.json")!
 
-        return URLSession.shared.dataTaskPublisher(for: url)
+        let url = URLSession.shared.dataTaskPublisher(for: urlString)
             .map(\.data)
             .decode(type: ISSLocationResponse.self, decoder: JSONDecoder())
             .eraseToAnyPublisher()
+        
+        return url
     }
 }

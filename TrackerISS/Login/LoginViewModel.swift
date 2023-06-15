@@ -25,6 +25,6 @@ class LoginViewModel: ObservableObject {
     }
 
     private func navigateToMap() {
-        // Aquí debes implementar la lógica para navegar a la siguiente vista (MapView).
+        //navegacion
     }
 }
