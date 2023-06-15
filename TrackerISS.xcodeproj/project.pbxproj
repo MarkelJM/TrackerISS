@@ -72,6 +72,7 @@
 		D30B79242A3A2809003FE5C1 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		D30B79282A3B1269003FE5C1 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		D30B79312A3B1FFD003FE5C1 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		D30B79352A3B6DD3003FE5C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +123,7 @@
 		D30B78E52A3872FF003FE5C1 /* TrackerISS */ = {
 			isa = PBXGroup;
 			children = (
+				D30B79352A3B6DD3003FE5C1 /* Info.plist */,
 				D30B792C2A3B1FB0003FE5C1 /* NavigationState */,
 				D30B791F2A3A27A1003FE5C1 /* API */,
 				D30B79122A38DDDF003FE5C1 /* Astronauts */,
@@ -515,6 +517,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"TrackerISS/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TrackerISS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -543,6 +546,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"TrackerISS/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TrackerISS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
