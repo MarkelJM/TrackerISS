@@ -21,19 +21,37 @@ struct MapView: View {
 
     
     var body: some View {
-        Map(coordinateRegion: .constant(MKCoordinateRegion(center: viewModel.issAnnotations.first?.coordinate ?? CLLocationCoordinate2D(), span: MKCoordinateSpan(latitudeDelta: 180, longitudeDelta: 180))), annotationItems: viewModel.issAnnotations) { annotation in
-            MapAnnotation(coordinate: annotation.coordinate) {
-                ISSAnnotationView()
+        ZStack{
+            Map(coordinateRegion: .constant(MKCoordinateRegion(center: viewModel.issAnnotations.first?.coordinate ?? CLLocationCoordinate2D(), span: MKCoordinateSpan(latitudeDelta: 180, longitudeDelta: 180))), annotationItems: viewModel.issAnnotations) { annotation in
+                MapAnnotation(coordinate: annotation.coordinate) {
+                    ISSAnnotationView()
+                }
+            }
+            .onAppear() {
+                viewModel.fetchISSLocation()
+            }
+            .onChange(of: viewModel.issAnnotations) { annotations in
+                if let coordinate = annotations.first?.coordinate {
+                    region.center = coordinate
+                }
+            }
+            VStack{
+                Spacer()
+                Button {
+                    viewModel.fetchISSLocation()
+                } label: {
+                    Text("Update ISS")
+                        .padding()
+                        .background(Color.blue)
+                        .border(.white)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                }
+                 
+                
+                .padding()
             }
         }
-        .onAppear() {
-            viewModel.fetchISSLocation()
-        }
-        .onChange(of: viewModel.issAnnotations) { annotations in
-                    if let coordinate = annotations.first?.coordinate {
-                        region.center = coordinate
-                    }
-                }
     }
 }
 
