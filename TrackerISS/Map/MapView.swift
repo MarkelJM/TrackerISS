@@ -28,6 +28,7 @@ struct MapView: View {
         ZStack{
             Map(coordinateRegion: $region, annotationItems: viewModel.issAnnotations) { annotation in
                 MapAnnotation(coordinate: annotation.coordinate) {
+                    //creo annotationButton para simplificar codigo, ya que habria demasiado info y era dificil de corregir errores
                     AnnotationButton(annotation: annotation, showingCallOut: showingCallOut, selectedAnnotation: selectedAnnotation, astronauts: viewModel.astronauts, selectedAnnotationBinding: $selectedAnnotation, showingCallOutBinding: $showingCallOut)
                 }
             }

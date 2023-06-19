@@ -22,13 +22,15 @@ struct CalloutView: View {
                 Text("Nombre: \(astronaut.name)")
             }
             Button {
-                showingCallOutBinding = false
+                $showingCallOutBinding.wrappedValue = false
             } label: {
                 Text("X")
                     .foregroundColor(.white)
                     .padding()
                     .background(Color.black)
                     .cornerRadius(10)
+                    .clipShape(Circle())
+                    
             }
 
         }

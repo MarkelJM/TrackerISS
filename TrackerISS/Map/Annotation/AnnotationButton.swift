@@ -27,13 +27,14 @@ struct AnnotationButton: View {
         .overlay(
             Group {
                 if showingCallOut && selectedAnnotation == annotation {
-                    CalloutView(annotation: annotation, astronauts: astronauts)
+                    CalloutView(annotation: annotation, astronauts: astronauts, showingCallOutBinding: $showingCallOutBinding)
                         .frame(width: 400, height: 500)
                 } else {
                     EmptyView()
                 }
             }
         )
+
     }
 }
 
@@ -44,10 +45,11 @@ struct AnnotationButton_Previews: PreviewProvider {
             annotation: ISSAnnotation( coordinate: CLLocationCoordinate2D(latitude: 0, longitude: 0)), // Esto es solo un ejemplo
             showingCallOut: false,
             selectedAnnotation: nil,
-            astronauts: [Astronaut(craft: "Ejemplo", name: "Ejemplo")], 
+            astronauts: [Astronaut(craft: "Ejemplo", name: "Ejemplo")],
             selectedAnnotationBinding: .constant(nil),
             showingCallOutBinding: .constant(false)
         )
     }
 }
+
 
