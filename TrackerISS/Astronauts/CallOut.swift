@@ -12,6 +12,7 @@ struct CalloutView: View {
     let annotation: ISSAnnotation
     let astronauts: [Astronaut]
     @Binding var showingCallOutBinding: Bool
+    /* actualizacion sobre combine conecta un objeto y actualiza la vsita y vicebersa*/
 
     var body: some View {
         VStack {
@@ -22,7 +23,7 @@ struct CalloutView: View {
                 Text("Nombre: \(astronaut.name)")
             }
             Button {
-                $showingCallOutBinding.wrappedValue = false
+                $showingCallOutBinding.wrappedValue = false /* obligatorio usar un . Por otro lado wrappedValue es una propiedad de Binding que te permite acceder y modificar el valor  de la variable a la que está vinculado el Binding.*/
             } label: {
                 Text("X")
                     .foregroundColor(.white)
