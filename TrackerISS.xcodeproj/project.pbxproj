@@ -47,6 +47,9 @@
 		D30B79442A3DC5F7003FE5C1 /* AstronautsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B79432A3DC5F7003FE5C1 /* AstronautsViewModel.swift */; };
 		D30B79452A3DC5F7003FE5C1 /* AstronautsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B79432A3DC5F7003FE5C1 /* AstronautsViewModel.swift */; };
 		D30B79462A3DC5F7003FE5C1 /* AstronautsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B79432A3DC5F7003FE5C1 /* AstronautsViewModel.swift */; };
+		D38A69782A40529C00DD80D4 /* CallOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38A69772A40529C00DD80D4 /* CallOut.swift */; };
+		D38A69792A40529C00DD80D4 /* CallOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38A69772A40529C00DD80D4 /* CallOut.swift */; };
+		D38A697A2A40529C00DD80D4 /* CallOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38A69772A40529C00DD80D4 /* CallOut.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +92,7 @@
 		D30B793B2A3B7369003FE5C1 /* ISSAnnotationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSAnnotationModel.swift; sourceTree = "<group>"; };
 		D30B793F2A3DC5DB003FE5C1 /* Astronauts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Astronauts.swift; sourceTree = "<group>"; };
 		D30B79432A3DC5F7003FE5C1 /* AstronautsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautsViewModel.swift; sourceTree = "<group>"; };
+		D38A69772A40529C00DD80D4 /* CallOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallOut.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +207,7 @@
 			children = (
 				D30B793F2A3DC5DB003FE5C1 /* Astronauts.swift */,
 				D30B79432A3DC5F7003FE5C1 /* AstronautsViewModel.swift */,
+				D38A69772A40529C00DD80D4 /* CallOut.swift */,
 			);
 			path = Astronauts;
 			sourceTree = "<group>";
@@ -362,6 +367,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D38A69782A40529C00DD80D4 /* CallOut.swift in Sources */,
 				D30B79212A3A27BA003FE5C1 /* apiService.swift in Sources */,
 				D30B79292A3B1269003FE5C1 /* MapView.swift in Sources */,
 				D30B791C2A3A2768003FE5C1 /* LocationISSModel.swift in Sources */,
@@ -385,6 +391,7 @@
 				D30B79452A3DC5F7003FE5C1 /* AstronautsViewModel.swift in Sources */,
 				D30B792A2A3B1269003FE5C1 /* MapView.swift in Sources */,
 				D30B79392A3B6F00003FE5C1 /* AnnotationView.swift in Sources */,
+				D38A69792A40529C00DD80D4 /* CallOut.swift in Sources */,
 				D30B79412A3DC5DB003FE5C1 /* Astronauts.swift in Sources */,
 				D30B79152A38DDFB003FE5C1 /* LoginView.swift in Sources */,
 				D30B79222A3A27BA003FE5C1 /* apiService.swift in Sources */,
@@ -401,6 +408,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D38A697A2A40529C00DD80D4 /* CallOut.swift in Sources */,
 				D30B79232A3A27BA003FE5C1 /* apiService.swift in Sources */,
 				D30B792B2A3B1269003FE5C1 /* MapView.swift in Sources */,
 				D30B791E2A3A2768003FE5C1 /* LocationISSModel.swift in Sources */,
