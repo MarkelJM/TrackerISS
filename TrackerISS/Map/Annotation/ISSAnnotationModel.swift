@@ -21,5 +21,6 @@ struct ISSAnnotation: Identifiable, Equatable {
     
     static func ==(lhs: ISSAnnotation, rhs: ISSAnnotation) -> Bool {
         return lhs.coordinate.latitude == rhs.coordinate.latitude && lhs.coordinate.longitude == rhs.coordinate.longitude
+        //return lhs.id == rhs.id
     }
 }

@@ -16,6 +16,7 @@ class MapViewModel: ObservableObject {
     // Propiedades para almacenar los datos
     //@Published var issLocation: ISSLocationResponse?
     @Published var issAnnotations: [ISSAnnotation] = [] // este array permitirá almacenar múltiples anotaciones, si en el futuro necesitamos mostrar múltiples ubicaciones de la ISS a la vez
+    @Published var astronauts = [Astronaut]()
 
     func fetchISSLocation() {
         apiService.fetchISSLocation()

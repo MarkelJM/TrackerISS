@@ -11,6 +11,7 @@ import SwiftUI
 struct CalloutView: View {
     let annotation: ISSAnnotation
     let astronauts: [Astronaut]
+    @Binding var showingCallOutBinding: Bool
 
     var body: some View {
         VStack {
@@ -20,6 +21,16 @@ struct CalloutView: View {
             ForEach(astronauts, id: \.name) { astronaut in
                 Text("Nombre: \(astronaut.name)")
             }
+            Button {
+                showingCallOutBinding = false
+            } label: {
+                Text("X")
+                    .foregroundColor(.white)
+                    .padding()
+                    .background(Color.black)
+                    .cornerRadius(10)
+            }
+
         }
         .padding()
         .background(Color.white)

@@ -50,6 +50,9 @@
 		D38A69782A40529C00DD80D4 /* CallOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38A69772A40529C00DD80D4 /* CallOut.swift */; };
 		D38A69792A40529C00DD80D4 /* CallOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38A69772A40529C00DD80D4 /* CallOut.swift */; };
 		D38A697A2A40529C00DD80D4 /* CallOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38A69772A40529C00DD80D4 /* CallOut.swift */; };
+		D38A697C2A40660400DD80D4 /* AnnotationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38A697B2A40660400DD80D4 /* AnnotationButton.swift */; };
+		D38A697D2A40660400DD80D4 /* AnnotationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38A697B2A40660400DD80D4 /* AnnotationButton.swift */; };
+		D38A697E2A40660400DD80D4 /* AnnotationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38A697B2A40660400DD80D4 /* AnnotationButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +96,7 @@
 		D30B793F2A3DC5DB003FE5C1 /* Astronauts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Astronauts.swift; sourceTree = "<group>"; };
 		D30B79432A3DC5F7003FE5C1 /* AstronautsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautsViewModel.swift; sourceTree = "<group>"; };
 		D38A69772A40529C00DD80D4 /* CallOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallOut.swift; sourceTree = "<group>"; };
+		D38A697B2A40660400DD80D4 /* AnnotationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +237,7 @@
 			children = (
 				D30B79372A3B6F00003FE5C1 /* AnnotationView.swift */,
 				D30B793B2A3B7369003FE5C1 /* ISSAnnotationModel.swift */,
+				D38A697B2A40660400DD80D4 /* AnnotationButton.swift */,
 			);
 			path = Annotation;
 			sourceTree = "<group>";
@@ -380,6 +385,7 @@
 				D30B79382A3B6F00003FE5C1 /* AnnotationView.swift in Sources */,
 				D30B793C2A3B7369003FE5C1 /* ISSAnnotationModel.swift in Sources */,
 				D30B78E92A3872FF003FE5C1 /* ContentView.swift in Sources */,
+				D38A697C2A40660400DD80D4 /* AnnotationButton.swift in Sources */,
 				D30B78E72A3872FF003FE5C1 /* TrackerISSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,6 +404,7 @@
 				D30B793D2A3B7369003FE5C1 /* ISSAnnotationModel.swift in Sources */,
 				D30B79332A3B1FFD003FE5C1 /* AppState.swift in Sources */,
 				D30B78F82A387300003FE5C1 /* TrackerISSTests.swift in Sources */,
+				D38A697D2A40660400DD80D4 /* AnnotationButton.swift in Sources */,
 				D30B791D2A3A2768003FE5C1 /* LocationISSModel.swift in Sources */,
 				D30B79192A38DE21003FE5C1 /* LoginViewModel.swift in Sources */,
 				D30B79262A3A2809003FE5C1 /* MapViewModel.swift in Sources */,
@@ -421,6 +428,7 @@
 				D30B793A2A3B6F00003FE5C1 /* AnnotationView.swift in Sources */,
 				D30B793E2A3B7369003FE5C1 /* ISSAnnotationModel.swift in Sources */,
 				D30B79022A387300003FE5C1 /* TrackerISSUITests.swift in Sources */,
+				D38A697E2A40660400DD80D4 /* AnnotationButton.swift in Sources */,
 				D30B79042A387300003FE5C1 /* TrackerISSUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
